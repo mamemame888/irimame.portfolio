@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>irimame's portfolio</title>
+        <meta name="description" content="irimameのWebデザインポートフォリオ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--ファビコン-->
+            <link rel="icon" type="image/png" href="images/favicon.png">
+
+        <!--リセットCSS-->
+            <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    
+        <!--Googleフォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <!--オリジナルCSS-->    
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="page-header">
+            <h1 class="align-center">
+                <a href="index.html"><img class="logo" src="images/14.png" alt="irimame's portfolio"></a>
+            </h1>
+            <nav>
+                <ul class="main-nav font-japanese">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">irimameについて</a></li>
+                    <li><a href="portfolio.html">ポートフォリオ</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+
+              <!--ハンバーガーメニュー-->
+              <div class="toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+             <!-- トグルメニュー -->
+            <nav class="toggle_menu">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">irimameについて</a></li>
+                    <li><a href="portfolio.html">ポートフォリオ</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="banner-main">
+            <div class="banner-hole">
+                <div class="banner-container">
+                <img class="banner1" src="images/1-1.png" alt="新作ドリンクバナー">
+                <img class="banner2" src="images/2-1.png" alt="旅行セールバナー">
+                <img class="banner3" src="images/5-1.png" alt="雑貨バナー">
+                <img class="banner4" src="images/syuukatsu.png" alt="就活バナー">
+                <img class="banner5" src="images/1-2.png" alt="新作ドリンクバナー２">
+                <img class="banner6" src="images/2-3.png" alt="旅行セールバナー２">
+                <img class="banner7" src="images/5-3.png" alt="雑貨バナー２">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="copyright">
+                <small>&copy; 2024 irimame</small>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const toggleBtn = document.querySelector('.toggle_btn');
+                const toggleMenu = document.querySelector('.toggle_menu');
+        
+                toggleBtn.addEventListener('click', function () {
+                    toggleBtn.classList.toggle('open');
+                    toggleMenu.classList.toggle('open');
+                });
+            });
+        </script>
+    </body>
+</html>

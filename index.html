@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>irimame's portfolio</title>
+        <meta name="description" content="irimameのWebデザインポートフォリオ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--ファビコン-->
+            <link rel="icon" type="image/png" href="images/favicon.png">
+
+        <!--リセットCSS-->
+            <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    
+        <!--Googleフォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <!--オリジナルCSS-->    
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header class="page-header">
+            <h1 class="align-center">
+                <a href="index.html"><img class="logo" src="images/14.png" alt="irimame's portfolio"></a>
+            </h1>
+            <nav>
+                <ul class="main-nav font-japanese">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">irimameについて</a></li>
+                    <li><a href="portfolio.html">ポートフォリオ</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+
+            <!--ハンバーガーメニュー-->
+            <div class="toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+             <!-- トグルメニュー -->
+            <nav class="toggle_menu">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">irimameについて</a></li>
+                    <li><a href="portfolio.html">ポートフォリオ</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="top-main"> 
+            <div class="mamelight">
+                <img src="images/Group 4.png" alt="豆電球">
+            </div>
+            <div class="welcome">
+                <img src="images/Group 23.png" alt="Welcome to irimame's portfolio.">
+            </div>
+            <div class="mame-about">
+                <a href="about.html"><img src="images/Group 27.png" alt="about"></a>
+            </div>
+            <div class="sousyoku7">
+                <img src="images/7.png" alt="">
+            </div>
+            <div class="sousyoku8">
+                <img src="images/8.png" alt="">
+            </div>
+            <div class="mame-portfolio">
+                <a href="portfolio.html"><img src="images/Group 31.png" alt="portfolio"></a>
+            </div>
+            <div class="mame-contact">
+                <a href="contact.html"><img src="images/Group 32.png" alt="contact"></a>
+            </div>
+            <div class="mame-instagram">
+                <img src="images/Group 35.png" alt="irimame's instagram">
+            </div>
+            <div class="hirameki">
+                <img src="images/Group 28.png" alt="">
+            </div>
+        </main>
+        <footer>
+            <div class="copyright">
+                <small>&copy; 2024 irimame</small>
+            </div>
+        </footer>
+
+         <!-- JavaScript -->
+         <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const toggleBtn = document.querySelector('.toggle_btn');
+                const toggleMenu = document.querySelector('.toggle_menu');
+        
+                toggleBtn.addEventListener('click', function () {
+                    toggleBtn.classList.toggle('open');
+                    toggleMenu.classList.toggle('open');
+                });
+            });
+        </script>
+    </body>
+</html>
